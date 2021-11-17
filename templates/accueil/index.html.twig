@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Identification!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<h2>Identification</h2>
+
+<form method="POST" action="/connexion">
+    <p>
+        <label for="nom">Identifiant*</label>
+        <input id="login" type="text" name="login"  size="30" maxlength="45">
+    </p>
+    <p>
+        <label for="mdp">Mot de passe*</label>
+        <input id="mdp"  type="password"  name="mdp" size="30" maxlength="45">
+    </p>
+        <input type="submit" value="Valider" name="valider">
+        <input type="reset" value="Annuler" name="annuler"> 
+    </p>
+</form>
+
+{% set lienPage = path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) %}
+
+{% if lienPage == '/connexion/echec' %}
+    {%set styleErreur = 'color:red; border-radius:5%; text-align:center'%}
+    <p style={{styleErreur}}>L'indentifiant ou le mot de passe est incorrect.</p>
+{% endif %}
+
+{% endblock %}
