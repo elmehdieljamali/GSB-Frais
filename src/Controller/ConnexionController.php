@@ -71,6 +71,5 @@ class ConnexionController extends AbstractController
             print_r($e) ;
         }
     }
-
 }
 ?>

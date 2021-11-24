@@ -10,6 +10,6 @@ connexion:
 seConnecter:
     path: /seConnecter
     controller: App\Controller\ConnexionController::seConnecter
-seDeconnecter:
-    path: /
-    controller: App\Controller/ConnexionController::seDeconnecter
+creerFiche:
+    path: /creerFiche
+    controller: App\Controller\CreerFicheController::index

@@ -7,5 +7,5 @@
 	session_unset() ;
 	session_destroy() ;
 	
-	header( 'Location: ../templates/accueilindex.html.twig?login=' . $login ) ;
+	header( 'Location: ../templates/accueil/index.html.twig?login=' . $login ) ;
 ?>
