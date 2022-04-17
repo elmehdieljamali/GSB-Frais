@@ -16,6 +16,8 @@ L'application permet aux visiteurs médicaux d'enregistrer leurs dépenses dans 
 - IDE : Visual Studio Code
 - Versioning : Git
 - Gestionnaire des dépendances : Composer
+## Modélisation de la base de données
+
 ## Description des cas d'utilisation
 **Se connecter**
 | **Nom du cas d'utilisation :** Se connecter |
