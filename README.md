@@ -17,7 +17,7 @@ L'application permet aux visiteurs médicaux d'enregistrer leurs dépenses dans 
 - Versioning : Git
 - Gestionnaire des dépendances : Composer
 ## Modélisation de la base de données
-
+![Capture d’écran 2022-04-17 131727](https://user-images.githubusercontent.com/85114414/163712150-0c74d4d9-467a-4ce2-8839-da863d4e90cb.png)
 ## Description des cas d'utilisation
 **Se connecter**
 | **Nom du cas d'utilisation :** Se connecter |
